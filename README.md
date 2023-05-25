@@ -17,10 +17,14 @@
 	- 사용법
 
 		1. 기존 compose file 과 동일합니다.
-		2. airflow directory >> docker-compose.yml 을 저장합니다. 
-		3. docker desktop을 실행시킵니다. (deamon을 켜야해요)
-		4. 해당 directory로 접근하여 docker compose up 입력!
-		5. 그럼 기존에 사용하시던 것 과 같이 사용 가능합니다. 
+		2. 기존 airflow compose port와 동일 하므로, 기존 airflow container를 깔끔하게 지워야합니다. 
+			
+			cmd : docker compose down --volumes --rmi all
+
+		3. airflow directory >> docker-compose.yml 을 저장합니다. 
+		4. docker desktop을 실행시킵니다. (deamon을 켜야해요)
+		5. 해당 directory로 접근하여 docker compose up 입력!
+		6. 그럼 기존에 사용하시던 것 과 같이 사용 가능합니다. 
 
 
 	*추가*
